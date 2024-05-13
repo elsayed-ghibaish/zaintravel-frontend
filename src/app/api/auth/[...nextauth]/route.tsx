@@ -1,14 +1,15 @@
-import NextAuth from "next-auth";
+import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
 import axios from "axios";
 
-export const authOptions: any = {
+export const authOptions = {
   providers: [
     CredentialsProvider({
       name: "credentials",
       credentials: {},
+
       authorize: async (credentials) => {
-        const { identifier, password }: any = credentials;
+        const { identifier, password } = credentials;
         // تواصل مع Strapi للتحقق من الاعتمادات
         try {
           const STRAPI_URL = process.env.STRAPI_URL;
