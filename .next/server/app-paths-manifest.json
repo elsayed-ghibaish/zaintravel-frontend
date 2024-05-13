@@ -1,0 +1,13 @@
+{
+  "/not-found": "app/not-found.js",
+  "/(auth)/profile/page": "app/(auth)/profile/page.js",
+  "/dashboard/bag-confirmation/page": "app/dashboard/bag-confirmation/page.js",
+  "/page": "app/page.js",
+  "/(auth)/sign-in/[[...sign-in]]/page": "app/(auth)/sign-in/[[...sign-in]]/page.js",
+  "/(auth)/profile/booking/page": "app/(auth)/profile/booking/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(auth)/sign-up/[[...sign-up]]/page": "app/(auth)/sign-up/[[...sign-up]]/page.js",
+  "/page/guest-booking/page": "app/page/guest-booking/page.js",
+  "/page/contact-us/page": "app/page/contact-us/page.js"
+}
