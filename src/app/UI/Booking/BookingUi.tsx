@@ -1,9 +1,9 @@
 "use client";
-import userFetch from "@/app/hooks/userFetch";
+import React, { useEffect, useState } from "react";
+import useFetchTwo from "@/app/hooks/useFetchTwo";
 import { StrapiClient } from "@/app/server/StrapiClient";
 import { format } from "date-fns/format";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
 import GetControlDate from "./components/GetControlDate";
 import { toast } from "react-toastify";
 import { IoWarningOutline } from "react-icons/io5";
@@ -12,7 +12,7 @@ import { parseISO } from "date-fns/parseISO";
 import { ar } from "date-fns/locale/ar";
 
 export default function BookingUi() {
-  const { data, loading, error }: any = userFetch("/users/me?populate=*");
+  const { data, loading, error }: any = useFetchTwo("/users/me?populate=*");
   const { availableDays, GetEndTime } = GetControlDate();
   const [GetMedleMovePoint, setGetMedleMovePoint] = useState([]);
   const [username, setUserName] = useState("");

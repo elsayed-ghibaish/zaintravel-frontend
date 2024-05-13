@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchApiTwo } from "./fetchApiTwo";
 
-const userFetch = (endPoint) => {
+const useFetchTwo = (endPoint) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -24,4 +24,4 @@ const userFetch = (endPoint) => {
   return { data, loading, error };
 };
 
-export default userFetch;
+export default useFetchTwo;

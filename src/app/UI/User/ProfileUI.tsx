@@ -3,10 +3,10 @@ import DetailsList from "./_components/DetailsList";
 import UserProfileInfo from "./_components/UserProfileInfo";
 import BookingNext from "./_components/BookingNext";
 import BookingPrevious from "./_components/BookingPrevious";
-import userFetch from "@/app/hooks/userFetch";
+import useFetchTwo from "@/app/hooks/useFetchTwo";
 
 export default function ProfileUI() {
-  const { data, loading, error } = userFetch("/users/me?populate=*");
+  const { data, loading, error } = useFetchTwo("/users/me?populate=*");
 
   return (
     <section className="bg-slate-100 flow-root	">
