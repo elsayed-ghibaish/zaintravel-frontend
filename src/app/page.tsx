@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className="lg:block flex flex-col items-center justify-center order-first">
               <h2 className="block text-2xl font-semibold text-red-600 mb-5">
-                حجز رحلة 
+                حجز رحلة
               </h2>
               <p className="font-medium">
                 مرحبًا بك في عالم الرحلات الجامعية، نحن نقدم لكم خدمة توصيل
