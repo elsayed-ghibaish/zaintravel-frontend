@@ -49,7 +49,7 @@ const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: "kelWI4WGQ2R8Z54jsfChuhb5AyAP1OhtYaUsTcsCdxQ=",
   pages: {
     signIn: "/sign-in",
   },
