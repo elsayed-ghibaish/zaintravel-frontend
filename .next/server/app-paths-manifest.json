@@ -1,6 +1,9 @@
 {
-  "/(auth)/profile/page": "app/(auth)/profile/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/not-found": "app/not-found.js",
   "/(auth)/sign-in/[[...sign-in]]/page": "app/(auth)/sign-in/[[...sign-in]]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/(auth)/profile/page": "app/(auth)/profile/page.js",
+  "/(auth)/profile/booking/page": "app/(auth)/profile/booking/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/user/bookingbag/route": "app/api/user/bookingbag/route.js"
 }

@@ -161,6 +161,10 @@ export default function BookingBagUI() {
         setSuccess(true);
         router.push("/profile");
         toast.success("تم الحجز بنجاح");
+      } else if (res.status === 500) {
+        // تحقق من حالة الاستجابة 500
+        // console.log("غير مسموح بالحجز");
+        setError("غير مسموح بالحجز الرجاء الاتصال بإدارة الموقع");
       } else {
         console.log("برجاء ملء الحقول بشكل صحيح");
       }
@@ -374,7 +378,7 @@ export default function BookingBagUI() {
           </div>
         )}
 
-        {error && (
+        {error2 && (
           <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">
             {error2}
           </div>
